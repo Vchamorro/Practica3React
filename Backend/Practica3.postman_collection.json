@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "d45eac04-dcec-4df0-9d25-1211ffbb7740",
+		"name": "Practica3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29600757",
+		"_collection_link": "https://orange-escape-189592.postman.co/workspace/New-Team-Workspace~edfa79d3-3db0-4caa-9be8-c8d5420fcfbc/collection/29600757-d45eac04-dcec-4df0-9d25-1211ffbb7740?action=share&source=collection_link&creator=29600757"
+	},
+	"item": [
+		{
+			"name": "GetUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/profile",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jonathan\",\r\n    \"lastname\": \"Alexis\",\r\n    \"email\": \"jalexis@correo.com\",\r\n    \"city\": \"Bariloche\",\r\n    \"country\": \"Argentina\",\r\n    \"Summary\": \"Programador enfocado en el backend y en la toma de requerimientos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/profile/update/users/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"profile",
+						"update",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateHobbie",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Agricultura\",\r\n    \"description\": \"Suelo cultivar algunas plantas y verduras.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/profile/update/hobbies/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"profile",
+						"update",
+						"hobbies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateFramework",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Springboot\",\r\n    \"level\": \"medio\",\r\n    \"year\": \"2022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/profile/update/frameworks/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"profile",
+						"update",
+						"frameworks",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8000/api",
+			"type": "string"
+		}
+	]
+}
