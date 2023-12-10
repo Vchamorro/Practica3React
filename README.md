@@ -18,9 +18,11 @@
 
 2.3.4 modificar el .env con las variables de entorno de su base de datos (ingresar el nombre de la base de datos creada en DB_DATABASE).
 
-2.3.5 php artisan db:seed --class=Seeders
+2.3.5 php artisan migrate:fresh
 
-2.3.6 php artisan serve --host 0.0.0.0
+2.3.6 php artisan db:seed --class=Seeders
+
+2.3.7 php artisan serve --host 0.0.0.0
 
 3. Pasos para instalar el frontend
 
